@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    h1= title
+    div(class='fullwidth inline')
+        h2(class='inline') User API List
+
+    - each api in apis
+        table(class="table")
+            thead(class="table__head")
+                tr
+                    th NAME
+                    th URL
+                    th METHOD
+                    th ACTION
+            tbody(class="table__body")
+                - each user in api.users
+                    tr
+                        td
+                            = user.name
+                        td
+                            = user.url
+                        td
+                            = user.method
+                        td
+                            a(href=user.url, class='button button--blue', target='blank') View

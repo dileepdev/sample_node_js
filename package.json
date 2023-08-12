@@ -1,0 +1,28 @@
+{
+    "name": "sample node",
+    "version": "0.0.1",
+    "private": true,
+    "author-name": "Dileep P",
+    "author-mail": "dileepnss@gmail.com",
+    "scripts": {
+      "start": "node ./bin/server",
+      "test" : "./node_modules/.bin/jest"
+    },
+    "dependencies": {
+      "body-parser": "~1.15.2",
+      "cookie-parser": "~1.4.3",
+      "debug": "~2.3.3",
+      "express": "~4.14.0",
+      "mongoose": "~4.7.0",
+      "jade": "~1.11.0",
+      "morgan": "~1.7.0",
+      "serve-favicon": "~2.3.0"
+    },
+    "devDependencies": {
+      "grunt": "^1.0.1",
+      "grunt-contrib-uglify": "~2.0.0",
+      "grunt-contrib-cssmin": "~1.0.2",
+      "should": "^11.1.1",
+      "supertest": "^2.0.1"
+    }
+  }
